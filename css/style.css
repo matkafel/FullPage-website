@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #000 30%, #fff 30%);
+}
+
+.nav {
+  position: absolute;
+  width: 100vw;
+  height: 3vh;
+  display: flex;
+  top: 3%;
+}
+
+.nav .logo {
+  margin: -0.2rem 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .nav .logo {
+    margin: -0.7rem 8rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .nav .logo {
+    margin: 0rem 6rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .nav .logo {
+    margin: -0.5rem 15rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+  .nav .logo {
+    margin: -0.5rem 18rem;
+  }
+}
+
+.nav ul {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  width: 70%;
+  right: 0;
+}
+
+.nav ul li {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0.7rem;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .nav ul li {
+    margin: 0 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .nav ul li {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+  .nav ul li {
+    margin: 0 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .nav ul li {
+    font-size: 1.8rem;
+    margin: 0 4.5rem;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+  .nav ul li {
+    font-size: 1.8rem;
+    margin: 0 6.5rem;
+  }
+}
+
+@media (min-width: 1410px) and (orientation: landscape) {
+  .nav ul li {
+    font-size: 1.8rem;
+    margin: 0 9rem;
+  }
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  top: -20%;
+}
+
+.main .img-wrapper {
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+
+.main .img-wrapper .circle {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 25%;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: blue;
+  box-shadow: 1px 1px 40px 3px blue;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .main .img-wrapper .circle {
+    margin-left: 15%;
+    margin-top: 0%;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .main .img-wrapper .circle {
+    margin-left: 30%;
+    margin-top: 0%;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  .main .img-wrapper .circle {
+    margin-left: 35%;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main .img-wrapper .circle {
+    margin-left: 20%;
+    margin-top: -10%;
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+  .main .img-wrapper .circle {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 1410px) and (orientation: landscape) {
+  .main .img-wrapper .circle {
+    margin-left: 28%;
+    margin-top: -12%;
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+.main .img-wrapper .circle .img {
+  position: absolute;
+  background-image: url("../images/ultrabook1.png");
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  top: 0%;
+  left: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .text {
+  position: absolute;
+  width: 40%;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  right: 0;
+  color: black;
+  text-align: justify;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .main .text {
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .main .text {
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+  .main .text {
+    width: 35%;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main .text {
+    width: 30%;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+  .main .text {
+    width: 30%;
+    margin-right: 20rem;
+  }
+}
+
+.main .text h6 {
+  font-size: 1rem;
+  color: blue;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .main .text h6 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .main .text h6 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main .text h6 {
+    font-size: 2rem;
+  }
+}
+
+.main .text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .main .text h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .main .text h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main .text h1 {
+    font-size: 5rem;
+  }
+}
+
+.main .text p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .main .text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main .text p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+  }
+}
+
+h2 {
+  position: absolute;
+  text-align: left;
+  color: #eaeaea;
+  bottom: 0;
+  margin-bottom: 5%;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 7rem;
+  margin-left: 30%;
+  text-align: center;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  h2 {
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 0%;
+  }
+}
+
+@media (min-width: 1260px) and (orientation: landscape) {
+  h2 {
+    font-size: 8rem;
+  }
+}
+
+span {
+  position: absolute;
+  background: black !important;
+}
+
+/* SECTION 2 */
+.s2 .main .img-wrapper .circle {
+  background-color: red;
+  box-shadow: 1px 1px 40px 3px red;
+}
+
+.s2 .main .img-wrapper .circle .img {
+  background-image: url("../images/gaming.png");
+  transform: scale(1.2);
+  top: 0%;
+  left: 10%;
+}
+
+.s2 .main .text h6 {
+  color: red;
+}
+
+/* SECTION 3 */
+.s3 .main .img-wrapper .circle {
+  background-color: lightgray;
+  box-shadow: 1px 1px 40px 3px lightgray;
+}
+
+.s3 .main .img-wrapper .circle .img {
+  background-image: url("../images/macbook.png");
+  transform: scale(1.2);
+  top: 0%;
+  left: 10%;
+}
+
+.s3 .main .text h6 {
+  color: lightgray;
+}
+
+/* SECTION 4 */
+.s4 .main .img-wrapper .circle {
+  background-color: #ffd829;
+  box-shadow: 1px 1px 40px 3px #ffd829;
+}
+
+.s4 .main .img-wrapper .circle .img {
+  background-image: url("../images/2in1.png");
+  transform: scale(1.1);
+  top: 5%;
+  left: 10%;
+}
+
+.s4 .main .text h6 {
+  color: #ffd829;
+}
+/*# sourceMappingURL=style.css.map */
